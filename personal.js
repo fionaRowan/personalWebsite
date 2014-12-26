@@ -9,6 +9,7 @@
 //                 ||     ||   
 
 
+//float scroll
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -24,6 +25,7 @@ $(function() {
   });
 });
 
+//back to top button
 $('<div ><a id = "scrollTop" href="#home">^</a></div>')
   .appendTo("#home");
 
@@ -48,12 +50,10 @@ $(function(){
 	});
 });
 
+//hide slideOut elements
 $('.slideOut').hide();
 
-$('#about .section span').click(function() {
-  $(this).toggleClass('prettyHover');
-});
-
+//display / hide slideOut elements when clicked
 $('#butt1').click(function(){
   $('#slide1').slideToggle();
 })
@@ -66,12 +66,15 @@ $('#butt3').click(function(){
   $('#slide3').slideToggle();
 })
 
+
+//add class to button elements when hovered over
 $('.button').hover(function() {
   $(this).addClass('prettyHover');
 }, function() {
   $(this).removeClass('prettyHover');
 });
 
+//only show back to top button when scrolled past home section
 $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {
       $('#scrollTop').fadeIn();
