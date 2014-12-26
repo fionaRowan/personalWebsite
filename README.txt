@@ -31,3 +31,7 @@ Here is some simply jQuery code to do the following:
 -hide slideout elements
 -toggle (display / hide) slide elements when clicked
 -add class to button elements when hovered over
+
+TO BE ADDED: 
+-portfolio
+-languages / skills
