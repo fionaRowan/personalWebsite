@@ -9,6 +9,11 @@
 //                 ||     ||   
 
 
+//redirect to mobile site
+if (screen.width <= 1000) {
+    window.location = "mobile.html";
+  }
+
 //float scroll
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -83,6 +88,8 @@ $(window).scroll(function(){
     }
 
   });
+
+
 
 
 
