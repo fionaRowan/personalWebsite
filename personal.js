@@ -9,10 +9,12 @@
 //                 ||     ||   
 
 
-//redirect to mobile site
-if (screen.width <= 1000) {
-    window.location = "mobile.html";
-  }
+var pathname = window.location.pathname
+  , width = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+
+if (width <= 769 && pathname !== '/mobile.html') {
+    window.location = '/mobile.html';
+}
 
 //float scroll
 $(function() {
